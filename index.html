@@ -10,11 +10,15 @@
 </head>
 <body>
     <header class="header">
-        <a href="#" class="header__logo">
-            <img src="./img/light-logo.png" alt="">
-        </a>
-        <div class="container">
+        <div class="header__container">
+            
             <nav class="header__menu">
+                <a href="#" class="header__logo">
+                    <img src="./img/light-logo.png" alt="">
+                </a>
+                <div class="header__burger">
+                    <span></span>
+                </div>
                 <ul class="header__list">
                     <li><a href="#" class="header__link">Главная</a></li>
                     <li><a href="#" class="header__link">Проекты</a></li>
@@ -22,9 +26,12 @@
                     <li><a href="#" class="header__link">Блог</a></li>
                     <li><a href="#" class="header__link">Контакты</a></li>
                 </ul>
-                <button class="btn header__btn btn-white"><img src="subscribe.png" alt="" class="btn__img">Подписка на обновления</button>
             </nav>
+            <button class="btn header__btn btn-white"><img src="./img/subscribe.png" alt="" class="btn__img">Подписка на обновления</button>
+
         </div>
     </header>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

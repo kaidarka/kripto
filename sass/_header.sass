@@ -2,30 +2,139 @@
     background: url(../img/header-bg.jpg) no-repeat center top
     background-size: cover
     height: 100vh
-    display: flex
-    &__logo
-        position: relative
-        top: 18px
-        left: 90px
-    &__menu
+    &__container
         height: 70px
+        margin: 0 auto
+        margin-left: 5%
+        margin-right: 5%
         display: flex
-        align-items: center
         justify-content: space-between
+        align-items: center
+    &__logo
+        padding: 24px 70px 0px 0px
+    &__menu
+        display: flex
+    &__burger
+        display: none 
     &__list
         padding: 0
         display: flex
-        align-self: flex-end
+        align-self: end
         width: 523px
         justify-content: space-between
         border-bottom: 1px solid #FFF
-        padding-bottom: 21px
+        padding: 25px 0px
         & li 
             list-style: none
     &__link
         text-decoration: none
         color: #36678B
         &:hover
-            padding-bottom: 19px
+            padding-bottom: 23px
             border-bottom: 3px solid #ffffff
             color: #fff
+    &__btn
+        color: #ffffff
+        display: flex
+        align-items: center
+        background: none
+        padding: 14px 20px
+        border: 2px solid #FFFFFF
+        border-radius: 5px
+.btn__img
+    margin-right: 14px
+        
+
+@media screen and ( max-width: 1124px)
+    .header
+        &__logo
+            padding: 24px 15px 0px 0px    
+@media screen and ( max-width: 1036px)
+    .header
+        &__btn
+            padding: 5px 15px
+            margin-left: 5px
+@media screen and ( max-width:  1024px)
+    .header
+        &__btn
+            display: none
+        &__logo
+            padding: 24px 40px 0px 0px
+@media screen and ( max-width: 767px )
+    body.lock
+        overflow: hidden
+    .header
+        &__logo
+            padding: 0
+        &__menu
+            width: 100%
+            display: flex
+            justify-content: space-between
+            align-items: center
+        &__burger
+            z-index: 3
+            display: block
+            position: relative
+            top: 0px
+            right: 0px
+            width: 30px
+            height: 20px
+            &.active
+                & span
+                    background-color: #000000
+                    transform: scale(0)
+                &::before
+                    background-color: #000000
+                    transform: rotate(45deg)
+                    top: 9px
+                &::after
+                    background-color: #000000
+                    transform: rotate(-45deg)
+                    bottom: 9px
+            & span
+                position: absolute
+                background-color: #fff
+                left: 0
+                width: 100%
+                height: 2px
+                top: 9px
+                transition: all 0.3s ease 0s
+            &::before, &::after
+                content: ''
+                background-color: #fff
+                position: absolute
+                width: 100%
+                height: 2px
+                left: 0
+                transition: all 0.3s ease 0s
+            &::before
+                top: 0
+            &::after
+                bottom: 0
+        &__list
+            display: block
+            box-shadow:  0 0 10px rgba(0,0,0,0.5)
+            border-radius: 8px 0 0 0
+            position: fixed
+            right: -100%
+            top: 0
+            opacity: 0
+            height: 100%
+            width: 30%
+            background: #fff
+            z-index: 2
+            padding: 65px 0px 0px 20px
+            transition: all 0.3s ease 0s
+            overflow: auto 
+            &.active
+                right: 0
+                opacity: 1
+            & li
+                margin-bottom: 25px
+        &__link
+            &:hover
+                color: #000000
+                font-weight: 600
+
+
+    
