@@ -22,9 +22,9 @@
 }
 
 .header__logo {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  position: relative;
+  top: 18px;
+  left: 90px;
 }
 
 .header__menu {
