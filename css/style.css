@@ -2,6 +2,10 @@
   margin: 0;
 }
 
+body {
+  background: #ffffff;
+}
+
 @font-face {
   font-family: 'Gotham Pro';
   src: local("../fonts/Gotham Pro Black"), local("Gotham-Pro-Black");
@@ -10,6 +14,34 @@
   src: url("../fonts/GothamPro-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
+}
+
+.container {
+  min-width: 1100px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: 'Gotham Pro';
+  font-size: 50px;
+  color: #232323;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #000;
+  font-size: 24px;
+}
+
+p, a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  color: #000000;
+}
+
+button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 19px;
 }
 
 .header {
@@ -92,7 +124,16 @@
   border-radius: 5px;
 }
 
-.btn__img {
+.header__btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+.header__btn:hover svg path {
+  fill: #000;
+}
+
+.btn__svg {
   margin-right: 14px;
 }
 
@@ -289,25 +330,162 @@
   }
 }
 
-.container {
-  min-width: 1100px;
-  margin: 0 auto;
+.about {
+  padding-left: 70px;
+  margin-right: 230px;
+  margin-top: 100px;
+  padding-top: 140px;
+  background: url(../img/about-bg.png) no-repeat right center;
+  padding-bottom: 150px;
 }
 
-h1 {
-  font-family: 'Gotham Pro';
-  font-size: 50px;
-  color: #232323;
+.about__title {
+  padding-left: 20px;
+  line-height: 156.2%;
+  padding-bottom: 30px;
 }
 
-p, a {
-  font-family: 'Roboto', sans-serif;
-  font-size: 17px;
-  color: #000000;
+.about-block {
+  width: 552px;
+  padding: 30px 33px;
+  background-color: #A1C7E3;
+  border-radius: 7px;
+  -webkit-box-shadow: 0px 0px 100px rgba(161, 199, 227, 0.4);
+          box-shadow: 0px 0px 100px rgba(161, 199, 227, 0.4);
 }
 
-button {
-  font-family: 'Roboto', sans-serif;
-  font-size: 19px;
+.about__subtitle {
+  padding-bottom: 30px;
+  line-height: 167.19%;
+}
+
+.about__link {
+  padding-top: 10px;
+  color: #0072CA;
+  text-decoration: none;
+}
+
+.about__link:hover {
+  border-bottom: 1px solid #0072CA;
+}
+
+.blog {
+  padding-left: 90px;
+  padding-bottom: 100px;
+}
+
+.blog__title {
+  line-height: 156.2%;
+  padding-bottom: 20px;
+}
+
+.blog-block {
+  cursor: pointer;
+  width: 738px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.blog-block__img {
+  -webkit-box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.15);
+  margin-right: 30px;
+}
+
+.blog-block__title {
+  padding-top: 3px;
+  padding-bottom: 8px;
+}
+
+.blog-block__subtitle {
+  line-height: 149.19%;
+  color: #676767;
+}
+
+.blog-block:hover {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+  border-radius: 7px;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.blog-block:hover h2 {
+  color: #0072CA;
+}
+
+.blog-block:hover p {
+  color: #0072CA;
+}
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 250px;
+}
+
+.contacts-block__title {
+  line-height: 156.2%;
+  padding-bottom: 42px;
+}
+
+.contacts-block__subtitle {
+  line-height: 139.69%;
+  padding-bottom: 19px;
+}
+
+.contacts-block__link {
+  line-height: 139.69%;
+  color: #0072CA;
+  text-decoration: none;
+}
+
+.contacts-block__link:hover {
+  border-bottom: 1px solid #0072CA;
+}
+
+.contacts-block__icons {
+  padding-top: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contacts-block__svg {
+  margin-right: 32px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.contacts-block__svg:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.contacts-block__svg path:hover {
+  fill: #94CDF9;
+}
+
+.contacts-block__btn {
+  margin-top: 43px;
+  color: #0072CA;
+  border: 1px solid #1386DE;
+  border-radius: 4px;
+  background: none;
+  padding: 11px 17px;
+}
+
+.contacts-block__btn:hover {
+  background: #1386DE;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
