@@ -2,6 +2,7 @@
     background: url(../img/footer-bg.jpg) no-repeat center top
     background-size: cover
     padding-left: 89px
+    padding-right: 89px
     &__title
         padding-top: 172px
         line-height: 156.2%
@@ -15,6 +16,10 @@
         border: 1px solid #000000
         border-radius: 4px
         height: 45px
+        padding-left: 22px
+        &::placeholder
+            color: #393939
+            font-size: 17px
     &__checkbox
         width: 380px
         font-family: 'Roboto', sans-serif
@@ -27,15 +32,55 @@
             &:hover
                 border-bottom: 1px solid #0072CA
     &__btn
-            color: #0072CA
-            border: 1px solid #1386DE
-            border-radius: 4px
-            background: none
-            padding: 17px 45px
-            margin-bottom: 324px
-            &:hover
-                background: #1386DE
-                color: #fff
+        color: #0072CA
+        border: 1px solid #1386DE
+        border-radius: 4px
+        background: none
+        padding: 17px 45px
+        margin-bottom: 324px
+        &:hover
+            background: #1386DE
+            color: #fff
+    &__line
+        width: 100%
+        border-bottom: 1px solid #000
+    &__menu
+        padding-top: 68px
+        padding-bottom: 70px
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__list
+        & li 
+            list-style: none
+            padding-bottom: 21px
+            &:last-child
+                padding-bottom: 0
+    &__link
+        text-decoration: none
+        &:hover
+            border-bottom: 1px solid #000
+    &__mail
+        color: #0072CA
+        text-decoration: none
+        &:hover
+            border-bottom: 1px solid #0072CA
+    &-social
+        &__title
+            padding-bottom: 21px
+        & svg
+            & path
+                &:hover
+                    fill: #000000
+    &__konf
+        text-align: center
+        width: 100%
+        color: #454545
+        font-size: 15px
+        font-family: 'Roboto', sans-serif
+        padding-bottom: 9px
+    
+    
 
 .input
     &-text
