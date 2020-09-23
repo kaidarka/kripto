@@ -1,0 +1,51 @@
+.projects
+    padding-top: 100px
+    padding-bottom: 250px
+    padding-left: 90px
+    display: flex
+    align-items: center
+    &__block
+        padding-left: 100px
+    &__title
+        padding-bottom: 40px
+    &__link
+        display: inline-block
+        line-height: 156.69%
+        font-size: 21px
+        color: #545454
+        font-family: 'Roboto', sans-serif
+        &:hover 
+            color: #000
+            border-bottom: 2px dashed #000
+            margin-bottom: -2px
+        &.active
+            color: #000
+            border-bottom: 2px dashed #000
+            margin-bottom: -2px
+    &__list
+        & li
+            cursor: pointer
+            list-style: none 
+            padding-bottom: 50px
+                
+.slider
+    position: relative
+    &__items
+        width: 460px
+        height: 580px
+    &__item
+        display: block
+        position: absolute
+        opacity: 0
+        left: -100%
+        top: 0
+        transition: all 0.5s ease 0s
+        transform: scale(0.7)
+        &.active
+            transform: scale(1)
+            opacity: 1
+            left: 0
+    &__img
+        max-width: 100%
+        border-radius: 7px
+        filter: drop-shadow(0px 4px 100px rgba(0, 0, 0, 0.25))
