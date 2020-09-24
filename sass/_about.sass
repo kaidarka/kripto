@@ -1,6 +1,5 @@
 .about
     padding-left: 70px
-    margin-right: 230px
     padding-top: 250px
     background: url(../img/about-bg.png) no-repeat right bottom
     padding-bottom: 150px
@@ -24,3 +23,16 @@
         &:hover
             border-bottom: 1px solid #0072CA
 
+@media screen and ( max-width: 1024px )
+    .about
+        &-block
+            width: 400px
+
+@media screen and ( max-width: 870px )
+    .about
+        padding-top: 100px
+        padding-left: 15px
+        &-block
+            width: 300px
+        &__subtitle
+            font-size: 14px

@@ -2,7 +2,7 @@
     background: url(../img/footer-bg.jpg) no-repeat center top
     background-size: cover
     padding-left: 89px
-    padding-right: 89px
+    padding-right: 300px
     &__title
         padding-top: 172px
         line-height: 156.2%
@@ -42,15 +42,17 @@
             background: #1386DE
             color: #fff
     &__line
-        width: 100%
+        width: 95%
         border-bottom: 1px solid #000
     &__menu
+        width: 95%
         padding-top: 68px
         padding-bottom: 70px
         display: flex
         justify-content: space-between
         align-items: center
     &__list
+        padding-left: 0
         & li 
             list-style: none
             padding-bottom: 21px
@@ -109,3 +111,33 @@
 
 .checkbox:checked::before 
     opacity: 1
+
+
+@media screen and ( max-width: 1200px )
+    .footer
+        &__icon
+            margin-right: 10px
+@media screen and ( max-width: 1050px )
+    .footer
+        &__menu
+            flex-wrap: wrap
+        &-social
+            margin-top: 20px   
+
+@media screen and ( max-width: 1024px )
+    .footer
+        &__btn
+            margin-bottom: 100px
+@media screen and ( max-width: 840px )
+    .footer
+        &__logo
+            display: none
+@media screen and ( max-width: 768px )
+    .footer
+        padding-right: 200px
+        padding-left: 15px
+        &__btn
+            margin-bottom: 30px
+        &__title
+            padding-top: 30px
+    

@@ -10,7 +10,10 @@
         display: flex
         padding: 20px
         transition: all 0.3s ease 0s
+        display: flex
+        align-items: center
         &__img
+
             box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.15)
             margin-right: 30px
         &__title
@@ -28,4 +31,29 @@
                 color: #0072CA
             & p
                 color: #0072CA
-            
+
+@media screen and ( max-width: 1169px )
+    .blog
+        &-block
+            width: 580px
+    
+@media screen and ( max-width: 1024px )
+    .blog
+        &-block
+            width: 500px
+            &__img
+                width: 100%
+    
+@media screen and ( max-width: 930px )
+    .blog
+        padding-left: 10px
+        &-block
+            width: 350px
+            &__title
+                font-size: 18px
+            &__subtitle
+                font-size: 12px
+@media screen and ( max-width: 768px )
+    .blog
+        padding-bottom: 30px
+    

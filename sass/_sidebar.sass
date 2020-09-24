@@ -4,6 +4,7 @@
     padding: 20px 25px
     background: #fff
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25)
+    
     &-subscribe
         padding-top: 27px
         padding-bottom: 16px
@@ -20,6 +21,7 @@
     &__icons
         display: flex
         justify-content: space-between
+        align-items: center
         padding: 0px 16px
     &__svg 
         margin-right: 32px
@@ -69,7 +71,7 @@
             color: #000
         &__links
             padding-top: 8px
-            padding-right: 70px
+            padding-right: 15px
         &__link
             display: inline-table
             text-decoration: none
@@ -137,6 +139,7 @@
             font-size: 14px
         &__img
             padding-top: 5px
+            width: 100%
         &__title
             padding-bottom: 10px
             font-family: 'Roboto', sans-serif
@@ -166,8 +169,37 @@
             font-size: 14px
             &:hover
                     border-bottom: 1px solid#235E89
-
-
-            
+@media screen and ( max-width: 768px )
+    .sidebar
+        width: 200px
+        &-subscribe
+            &__title
+                font-size: 10px
+        &__svg
+            margin-right: 12px
+            &:last-child
+                margin-right: 0
+        &-categories
+            &__links
+                padding-right: 0
+            &__link
+                font-size: 11px
+        &-img
+            &__title
+                font-size: 13px
+            &__subtitle
+                font-size: 13px
+                left: -24px
+        &-blog
+            &__title
+                font-size: 12px
+        &-news
+            &__time
+                font-size: 12px
+            &__title
+                font-size: 11px
+            &__subtitle
+                font-size: 11px
+                line-height: 150%
 
             
