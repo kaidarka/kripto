@@ -173,6 +173,8 @@
     .sidebar
         width: 200px
         &-subscribe
+            &__img
+                width: 70%
             &__title
                 font-size: 10px
         &__svg
@@ -201,5 +203,20 @@
             &__subtitle
                 font-size: 11px
                 line-height: 150%
-
+@media screen and ( max-width: 425px )
+    .sidebar
+        width: 150px
+        padding: 20px 5px
+        &__icons
+            padding: 0
+            flex-wrap: wrap
+        &__svg
+            margin-right: 5px
+        &__search
+            & input 
+                height: 25px
+            & button
+                top: 5px
+                right: 10px
+        
             
