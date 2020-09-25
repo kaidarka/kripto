@@ -23,3 +23,8 @@ $("#blog").click(function() { // ID откуда кливаем
         scrollTop: $(".blog").offset().top  // класс объекта к которому приезжаем
     }, 1000); // Скорость прокрутки
 });
+$("#about1").click(function() { // ID откуда кливаем
+    $('html, body').animate({
+        scrollTop: $(".about").offset().top  // класс объекта к которому приезжаем
+    }, 1000); // Скорость прокрутки
+});
