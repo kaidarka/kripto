@@ -348,6 +348,7 @@ button {
 }
 
 .sidebar-subscribe {
+  cursor: pointer;
   padding-top: 27px;
   padding-bottom: 16px;
   border-radius: 5px;
@@ -643,6 +644,7 @@ button {
 
 @media screen and (max-width: 425px) {
   .sidebar {
+    overflow: hidden;
     width: 150px;
     padding: 20px 5px;
   }
@@ -722,7 +724,7 @@ button {
 @media screen and (max-width: 425px) {
   .about {
     background: none;
-    padding: 30px 0px;
+    padding: 30px 5px;
   }
   .about__title {
     font-size: 24px;
@@ -892,7 +894,7 @@ button {
         flex-wrap: wrap;
   }
   .projects__block {
-    padding-left: 10px;
+    padding-left: 0px;
   }
   .projects__title {
     margin-top: 35px;
@@ -904,6 +906,12 @@ button {
   }
   .projects__list li {
     padding-bottom: 5px;
+  }
+  .projects__btn {
+    font-size: 10px;
+    margin: 0;
+    margin-top: 10px;
+    padding: 7px 20px;
   }
   .slider__item {
     padding-top: 0;
@@ -1008,6 +1016,30 @@ button {
   }
 }
 
+@media screen and (max-width: 610px) {
+  .blog-block {
+    width: 200px;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .blog__title {
+    font-size: 24px;
+  }
+  .blog-block {
+    width: 150px;
+    padding: 0;
+    padding-bottom: 10px;
+  }
+  .blog-block__title {
+    font-size: 13px;
+  }
+  .blog-block__subtitle {
+    font-size: 11px;
+  }
+}
+
 .contacts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1043,6 +1075,9 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contacts-block__svg {
@@ -1107,6 +1142,36 @@ button {
 @media screen and (max-width: 768px) {
   .contacts {
     padding-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .contacts {
+    padding: 10px;
+  }
+  .contacts-block {
+    width: 150px;
+  }
+  .contacts-block__title {
+    font-size: 24px;
+    padding-bottom: 10px;
+  }
+  .contacts-block__subtitle {
+    font-size: 13px;
+  }
+  .contacts-block__link {
+    font-size: 13px;
+  }
+  .contacts-block__svg {
+    margin-right: 7px;
+  }
+  .contacts-block__svg:last-child {
+    margin: 0;
+  }
+  .contacts-block__btn {
+    margin-top: 20px;
+    font-size: 11px;
+    padding: 11px 7px;
   }
 }
 
@@ -1246,6 +1311,18 @@ button {
   fill: #000000;
 }
 
+.footer__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .footer__konf {
   text-align: center;
   width: 100%;
@@ -1275,7 +1352,7 @@ button {
   content: "·";
   color: #000000;
   position: absolute;
-  left: 4px;
+  left: 5px;
   top: 2px;
   -webkit-transform: scale(7.3);
           transform: scale(7.3);
@@ -1326,6 +1403,73 @@ button {
   }
   .footer__title {
     padding-top: 30px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .footer__title {
+    font-size: 24px;
+  }
+  .footer__form {
+    width: 150px;
+  }
+  .footer__input {
+    height: 28px;
+  }
+  .footer__input::-webkit-input-placeholder {
+    font-size: 12px;
+  }
+  .footer__input:-ms-input-placeholder {
+    font-size: 12px;
+  }
+  .footer__input::-ms-input-placeholder {
+    font-size: 12px;
+  }
+  .footer__input::placeholder {
+    font-size: 12px;
+  }
+  .footer__checkbox {
+    font-size: 12px;
+  }
+  .footer__checkbox a {
+    font-size: 12px;
+  }
+  .footer__btn {
+    font-size: 12px;
+    padding: 10px 43px;
+  }
+  .footer__line {
+    width: 100%;
+  }
+  .footer .input-text {
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer {
+    padding-right: 150px;
+  }
+  .footer__form {
+    width: 120px;
+  }
+  .footer__menu {
+    padding-top: 30px;
+  }
+  .footer__link {
+    font-size: 12px;
+  }
+  .footer__list li {
+    padding-bottom: 10px;
+  }
+  .footer__mail {
+    font-size: 12px;
+  }
+  .footer__icon {
+    margin-right: 10px;
+  }
+  .footer__konf {
+    font-size: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */

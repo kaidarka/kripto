@@ -19,6 +19,7 @@
         &__icons
             padding-top: 32px
             display: flex
+            align-items: center
         &__svg 
             margin-right: 32px
             transition: all 0.3s ease 0s
@@ -63,3 +64,24 @@
 @media screen and ( max-width: 768px )
     .contacts
         padding-bottom: 30px
+@media screen and ( max-width: 425px )
+    .contacts
+        padding: 10px
+        &-block    
+            width: 150px
+            &__title
+                font-size: 24px
+                padding-bottom: 10px
+            &__subtitle
+                font-size: 13px
+            &__link
+                font-size: 13px
+            &__svg
+                margin-right: 7px
+                &:last-child
+                    margin: 0
+            &__btn
+                margin-top: 20px
+                font-size: 11px
+                padding: 11px 7px
+

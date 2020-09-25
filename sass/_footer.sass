@@ -74,6 +74,10 @@
             & path
                 &:hover
                     fill: #000000
+    &__icons
+        display: flex
+        align-items: center
+        justify-content: space-between
     &__konf
         text-align: center
         width: 100%
@@ -103,7 +107,7 @@
     content: "·"
     color: #000000
     position: absolute
-    left: 4px
+    left: 5px
     top: 2px
     transform: scale(7.3)
     opacity: 0
@@ -140,3 +144,44 @@
             margin-bottom: 30px
         &__title
             padding-top: 30px
+@media screen and ( max-width: 425px )
+    .footer
+        &__title
+            font-size: 24px
+        &__form
+            width: 150px
+        &__input
+            height: 28px
+            &::placeholder
+                font-size: 12px 
+        &__checkbox
+            font-size: 12px
+            & a 
+                font-size: 12px 
+        &__btn
+            font-size: 12px
+            padding: 10px 43px
+        &__line
+            width: 100%
+        .input
+            &-text
+                height: 50px
+            
+@media screen and ( max-width: 320px )
+    .footer
+        padding-right: 150px
+        &__form
+            width: 120px
+        &__menu 
+            padding-top: 30px
+        &__link
+            font-size: 12px
+        &__list
+            & li 
+                padding-bottom: 10px
+        &__mail
+            font-size: 12px
+        &__icon
+            margin-right: 10px
+        &__konf
+            font-size: 10px
