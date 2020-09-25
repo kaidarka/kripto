@@ -109,11 +109,13 @@
     body.lock
         overflow: hidden
     .header
+        
         &__logo
             padding: 0
         &__menu
             width: 100%
             display: flex
+            position: relative
             justify-content: space-between
             align-items: center
         &__burger
@@ -157,6 +159,8 @@
             &::after
                 bottom: 0
         &__list
+            & div
+                margin-left: 67px
             display: block
             box-shadow:  0 0 10px rgba(0,0,0,0.5)
             border-radius: 8px 0 0 0
@@ -168,14 +172,14 @@
             width: 30%
             background: #fff
             z-index: 2
-            padding: 65px 0px 0px 20px
+            padding: 25px 0px 0px 20px
             transition: all 0.3s ease 0s
             overflow: auto 
             &.active
                 right: 0
                 opacity: 1
             & li
-                margin-bottom: 25px
+                margin-top: 25px    
         &__link
             &:hover
                 color: #000000

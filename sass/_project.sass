@@ -2,7 +2,7 @@
 
     &-container
         display: flex
-        padding: 50px 80px
+        padding: 50px 80px 0px 80px
         align-items: center
         
         & img
@@ -33,10 +33,16 @@
                 height: 280px
 @media screen and ( max-width: 425px )
     .project
-        &__text
+        &-container
+            padding: 0
+            padding-top: 10px
+        &-text
+            padding: 10px 10px
             background-color: #fab9c2
         &__title
             font-size: 24px
         &__subtitle
+            font-size: 12px
+        &__link
             font-size: 12px
     
