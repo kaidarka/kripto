@@ -662,6 +662,7 @@ button {
     margin-right: 5px;
   }
   .sidebar__search input {
+    width: 100px;
     height: 25px;
   }
   .sidebar__search button {
